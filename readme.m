@@ -1,12 +1,13 @@
 %% Cellular Remodelling Code
 % This Matlab code repository is to run dynamic discrete cell simulations
 % with remodelling via the use of a reference state. This is implemented in
-% various ways for both cell centre and vertex based models.
+% this codebase for cell centre models. 
 
 %% Folder Structure
-%The linearSpring and vertex folders contain code for running simulations
-%for cell centre and linear spring models respectively. shared code that is
-%used for both in order to run simulations for both of these is located in
+%The linearSpring folder contains code for running simulations
+%for cell centre linear spring models. Code that is used to help with these 
+% simulations, but not specifically relating to the mathematical 
+%implementation of cell centre linear spring  models is located in
 %the generalHelperFunctions folder. The sweeps folder contains a set of
 %files to run multiple simulations and create plots of the relevant data.
 %Files in the graphFunctions folder are used to work with plots, either
@@ -82,7 +83,7 @@ tri_vis(Time,Y,Tri);
 %for both the creep and strain relaxation experiments.
 
 %For the creep experiment, this is located in the file
-%creep_sweep_origtimes.m. This will run the the simulations, and save
+%creep_sweep.m. This will run the the simulations, and save
 %the time-strain data for each parameter combination in a high dimensional
 %matlab cell. The data is then fitted with a variety of fits (via the
 %CalculateExponentialFits function, and then this information is then used
@@ -108,7 +109,7 @@ tri_vis(Time,Y,Tri);
 %given value in the above bound values. 
 
 %This can be done in similar manner for the stress relaxation experiment
-%for recording the time-stress values, in the file strain_sweep_origtimes.m.
+%for recording the time-stress values, in the file strain_sweep.m.
 %This has similar lines for choosing bounds, but with fbounds being
 %replaced with 
 %Tbounds = {0 2 3}
@@ -116,4 +117,9 @@ tri_vis(Time,Y,Tri);
 %Again, various plots, such as for the coefficient ratio for plots
 %regarding the time-stress values for the simulations can then be run
 %further down in the file.
+
+%Further code for runnign alternate vertex based simulations can be found
+%in the following GitHub link:
+
+%https://github.com/reubenvanammers/research_code 
 
