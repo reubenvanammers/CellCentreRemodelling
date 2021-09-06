@@ -3,6 +3,20 @@ This Matlab code repository is to run dynamic discrete cell simulations
 with remodelling via the use of a reference state. This is implemented in
 this codebase for cell centre models. 
 
+Note: This code is released as is for the purposes of verifying the results of my 
+thesis and any other related papers. No guarantees for support or that it has no
+bugs (although hopefully not). Some of this code definitely deserves to be rewritten and refactored,
+owing as it does to multiple additional features added late in the R&D process.
+
+To see more code, including the vertex based simulations, view this repo:
+https://github.com/reubenvanammers/research_code
+
+To see a draft of the writeup of the linear spring results, go here: 
+https://github.com/reubenvanammers/CellCentreRemodelling/blob/master/physbioldraft.pdf
+
+To view my masters thesis, go here:
+https://github.com/reubenvanammers/research_code/blob/master/thesismaster.pdf
+
 # Folder Structure
 The linearSpring folder contains code for running simulations
 for cell centre linear spring models. Code that is used to help with these 
